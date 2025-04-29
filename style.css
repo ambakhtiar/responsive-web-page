@@ -21,23 +21,21 @@ body {
     color: #ff5733;
 }
 
-
-
 /* -------------- Navbar -------------*/
+.sub-body {
+    margin: 0 0 20px 0;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
-    max-width: 1050px;
-    margin: 0 auto;
     align-items: center;
     padding: 20px 10px;
-    background-color: #121212;
-    /* background: linear-gradient(to right, #1a1a1a, #000); */
     color: white;
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: bold;
     color: #ff5733;
     font-style: italic;
@@ -47,7 +45,6 @@ body {
     list-style: none;
     display: flex;
     gap: 20px;
-    background-color: #1a1a1a;
     border: solid 1px grey;
     border-radius: 50px;
     padding: 5px 5px;
@@ -90,18 +87,19 @@ body {
     background: linear-gradient(to top, #2c2b2b, #1a1a1a);
 }
 
+
 .banner-container {
     display: flex;
     gap: 30px;
     color: white;
-    padding: 20px 10px;
+    padding: 0 10px;
 }
 
 .banner-left {
     display: flex;
     flex-direction: column;
     align-self: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 .banner-left h1 {
@@ -144,9 +142,12 @@ body {
     flex-direction: column;
 }
 
+.play-icon {
+    display: none;
+}
+
 .banner-box {
     background-color: #4b4848;
-    width: 10rem;
     border-radius: 10px;
     padding: 0 20px;
     opacity: 70%;
@@ -154,7 +155,7 @@ body {
 
 .up-box {
     position: absolute;
-    margin-left: 200px;
+    margin-left: 150px;
     margin-top: 150px;
 }
 
@@ -166,12 +167,19 @@ body {
 }
 
 #blank-space {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     align-self: center;
     margin-right: 15px;
     background-color: #ff5733;
-    border-radius: 50px;
+    border-radius: 50%;
+}
+
+.material-symbols-outlined {
+    font-size: 36px;
+    /* Increase size */
+    color: blue;
+    /* Change color */
 }
 
 /* --------------For Responsive ----------- */
@@ -199,5 +207,36 @@ body {
 
     .banner-right {
         margin: 0 auto;
+    }
+
+    .up-box {
+        position: absolute;
+        margin-left: 170px;
+        margin-top: 170px;
+    }
+
+    .down-box {
+        display: flex;
+        position: absolute;
+        margin-left: -10px;
+        margin-top: 450px;
+    }
+
+    #blank-space {
+        width: 50px;
+        height: 50px;
+        background-color: #ff5733;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .play-icon {
+        display: block;
+        color: #ffffff;
+        font-size: 1.2rem;
+        transform: translateX(5%);
     }
 }
